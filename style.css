@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef4ff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0a3d91;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.semestre {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #1e5ed6;
+}
+
+.materia {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.aprobable {
+  background: #dbe9ff;
+  border: 2px solid #1e5ed6;
+}
+
+.aprobable:hover {
+  background: #c6dcff;
+}
+
+.aprobada {
+  background: #1e5ed6;
+  color: white;
+  text-decoration: line-through;
+}
+
+.bloqueada {
+  background: #ddd;
+  color: #777;
+  cursor: not-allowed;
+}
+ 
