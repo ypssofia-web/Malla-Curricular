@@ -2,104 +2,34 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Curricular – Geografía</title>
+  <title>Malla Curricular Geografía</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>📘 Malla Curricular – Geografía</h1>
+<h1>Malla Curricular – Geografía</h1>
 
 <div class="malla">
 
-  <!-- SEMESTRE I -->
-  <div class="semestre">
-    <h2>Semestre I</h2>
-    <div class="ramo" data-id="matematicas">Matemáticas Básicas</div>
-    <div class="ramo" data-id="geo_fisica">Geografía Física</div>
-    <div class="ramo" data-id="cartografia">Cartografía General</div>
-    <div class="ramo">Constitución Política y del Territorio</div>
-    <div class="ramo">Filosofía, Naturaleza y Sociedad</div>
-    <div class="ramo">Introducción a la Geografía</div>
-  </div>
-
-  <!-- SEMESTRE II -->
+  <!-- SEGUNDO SEMESTRE -->
   <div class="semestre">
     <h2>Semestre II</h2>
-    <div class="ramo">Comprensión y Producción de Textos Académicos</div>
-    <div class="ramo">Geografía Humana</div>
-    <div class="ramo bloqueado" data-id="hidro" data-pre="geo_fisica">Hidroclimatología</div>
-    <div class="ramo">Historia de las Ideas Geográficas</div>
-    <div class="ramo" data-id="geologia">Geología</div>
-    <div class="ramo" data-id="economia">Fundamentos de Economía</div>
-    <div class="ramo bloqueado" data-id="estadistica1" data-pre="matematicas">Estadística I</div>
+
+    <div class="materia aprobable" data-id="textos_generales">
+      COMPRENSIÓN Y PRODUCCIÓN DE TEXTOS ACADÉMICOS GENERALES (2 cr)
+    </div>
   </div>
 
-  <!-- SEMESTRE III -->
-  <div class="semestre">
-    <h2>Semestre III</h2>
-    <div class="ramo bloqueado" data-pre="economia">Geografía Económica</div>
-    <div class="ramo">Geografía Urbana</div>
-    <div class="ramo bloqueado" data-id="geomorfologia" data-pre="geologia">Geomorfología</div>
-    <div class="ramo">Tendencias Geográficas Contemporáneas</div>
-    <div class="ramo bloqueado" data-id="sensores" data-pre="cartografia">Interpretación de Imágenes de Sensores Remotos</div>
-    <div class="ramo bloqueado" data-id="estadistica2" data-pre="estadistica1">Estadística II</div>
-  </div>
-
-  <!-- SEMESTRE IV -->
-  <div class="semestre">
-    <h2>Semestre IV</h2>
-    <div class="ramo bloqueado" data-pre="geomorfologia">Geografía de Suelos</div>
-    <div class="ramo" data-id="metodologia">Metodología de la Investigación Geográfica</div>
-    <div class="ramo">Geografía Rural</div>
-    <div class="ramo bloqueado" data-id="sig1" data-pre="sensores">SIG I</div>
-  </div>
-
-  <!-- SEMESTRE V -->
-  <div class="semestre">
-    <h2>Semestre V</h2>
-    <div class="ramo bloqueado" data-id="analisis" data-pre="metodologia">Análisis Territorial</div>
-    <div class="ramo bloqueado" data-pre="geomorfologia">Ambientes Marinos y Costeros</div>
-    <div class="ramo">Geografía Política</div>
-    <div class="ramo bloqueado" data-id="sig2" data-pre="sig1">SIG II</div>
-  </div>
-
-  <!-- SEMESTRE VI -->
+  <!-- SEXTO SEMESTRE -->
   <div class="semestre">
     <h2>Semestre VI</h2>
-    <div class="ramo">Inglés IV</div>
-    <div class="ramo bloqueado" data-pre="Comprensión y Producción de Textos Académicos">Textos Académicos Disciplinarios</div>
-    <div class="ramo">Geografía de Colombia</div>
-    <div class="ramo bloqueado" data-pre="hidro">Biogeografía</div>
-    <div class="ramo bloqueado" data-id="planificacion" data-pre="analisis">Planificación Territorial</div>
-    <div class="ramo">Educación Geográfica</div>
-  </div>
 
-  <!-- SEMESTRE VII -->
-  <div class="semestre">
-    <h2>Semestre VII</h2>
-    <div class="ramo">Taller de Geografía I</div>
-    <div class="ramo">Seminario de Conflictos Territoriales</div>
-    <div class="ramo bloqueado" data-pre="geomorfologia">Seminario de Geografía de los Riesgos</div>
-  </div>
-
-  <!-- SEMESTRE VIII -->
-  <div class="semestre">
-    <h2>Semestre VIII</h2>
-    <div class="ramo bloqueado" data-pre="planificacion">Ordenamiento Territorial</div>
-    <div class="ramo">Taller de Geografía II</div>
-    <div class="ramo bloqueado" data-id="seminario" data-pre="metodologia">Seminario de Trabajo de Grado</div>
-  </div>
-
-  <!-- SEMESTRE IX -->
-  <div class="semestre">
-    <h2>Semestre IX</h2>
-    <div class="ramo bloqueado" data-id="tg1" data-pre="seminario">Trabajo de Grado I</div>
-  </div>
-
-  <!-- SEMESTRE X -->
-  <div class="semestre">
-    <h2>Semestre X</h2>
-    <div class="ramo bloqueado" data-pre="tg1">Trabajo de Grado II</div>
+    <div class="materia bloqueada"
+         data-id="textos_disciplinas"
+         data-prereq="textos_generales">
+      COMPRENSIÓN Y PRODUCCIÓN DE TEXTOS ACADÉMICOS DE LAS DISCIPLINAS –  
+      EDUCACIÓN, ARTES Y HUMANIDADES (2 cr)
+    </div>
   </div>
 
 </div>
