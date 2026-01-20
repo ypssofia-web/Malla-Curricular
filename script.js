@@ -1,39 +1,28 @@
-const ramos = document.querySelectorAll(".ramo");
+document.querySelectorAll('.materia').forEach(materia => {
+  materia.addEventListener('click', () => {
 
-// cargar progreso
-ramos.forEach(ramo => {
-  const id = ramo.dataset.id;
-  if (id && localStorage.getItem(id) === "aprobado") {
-    ramo.classList.add("aprobado");
-  }
-});
+    if (!materia.classList.contains('aprobable')) return;
 
-// desbloquear al cargar
-desbloquear();
+    materia.classList.remove('aprobable');
+    materia.classList.add('aprobada');
 
-ramos.forEach(ramo => {
-  ramo.addEventListener("click", () => {
-    if (ramo.classList.contains("bloqueado")) return;
-
-    ramo.classList.toggle("aprobado");
-
-    const id = ramo.dataset.id;
-    if (id) {
-      localStorage.setItem(id, ramo.classList.contains("aprobado") ? "aprobado" : "");
-    }
-
-    desbloquear();
+    verificarDesbloqueos();
   });
 });
 
-function desbloquear() {
-  ramos.forEach(ramo => {
-    const prereq = ramo.dataset.pre;
-    if (!prereq) return;
+function verificarDesbloqueos() {
+  document.querySelectorAll('.materia.bloqueada').forEach(materia => {
 
-    const requisito = document.querySelector(`[data-id="${prereq}"]`);
-    if (requisito && requisito.classList.contains("aprobado")) {
-      ramo.classList.remove("bloqueado");
+    const prereqs = materia.dataset.prereq.split(',');
+
+    const cumplidos = prereqs.every(id => {
+      const prereq = document.querySelector(`[data-id="${id}"]`);
+      return prereq && prereq.classList.contains('aprobada');
+    });
+
+    if (cumplidos) {
+      materia.classList.remove('bloqueada');
+      materia.classList.add('aprobable');
     }
   });
 }
