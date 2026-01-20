@@ -1,54 +1,61 @@
 body {
   font-family: Arial, sans-serif;
-  background: #eef3fb;
+  background: #f0f6ff;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #0b3c8c;
+  color: #0a3d91;
 }
 
 .malla {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .semestre {
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
   padding: 15px;
-  border-top: 6px solid #1e88e5;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .semestre h2 {
   text-align: center;
-  color: #1e88e5;
+  color: #1e5ed6;
 }
 
-.ramo {
-  background: #e3f2fd;
-  padding: 10px;
+.materia {
+  padding: 12px;
+  margin: 10px 0;
   border-radius: 8px;
-  margin: 8px 0;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
   border: 2px solid transparent;
 }
 
-.ramo:hover {
-  background: #bbdefb;
+/* Estados */
+
+.aprobable {
+  background: #e3efff;
+  border-color: #1e5ed6;
 }
 
-.ramo.aprobado {
-  background: #1e88e5;
+.aprobable:hover {
+  background: #cfe2ff;
+}
+
+.aprobada {
+  background: #1e5ed6;
   color: white;
   text-decoration: line-through;
 }
 
-.ramo.bloqueado {
-  background: #cfd8dc;
-  color: #607d8b;
+.bloqueada {
+  background: #e0e0e0;
+  color: #777;
   cursor: not-allowed;
 }
