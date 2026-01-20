@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Geografía</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Malla Curricular – Geografía</h1>
+
+<div class="malla">
+
+<!-- ===== PRIMER AÑO ===== -->
+
+<div class="semestre">
+<h2>Semestre I</h2>
+
+<div class="materia aprobable" data-id="mate_basica">Matemáticas Básicas</div>
+<div class="materia aprobable" data-id="geo_fisica">Geografía Física</div>
+<div class="materia aprobable" data-id="cartografia">Cartografía General</div>
+<div class="materia aprobable">Constitución Política y del Territorio</div>
+<div class="materia aprobable">Filosofía Naturaleza y Sociedad</div>
+<div class="materia aprobable">Introducción a la Geografía</div>
+</div>
+
+<div class="semestre">
+<h2>Semestre II</h2>
+
+<div class="materia aprobable" data-id="textos_generales">
+Comprensión y Producción de Textos Académicos Generales
+</div>
+
+<div class="materia aprobable">Geografía Humana</div>
+
+<div class="materia bloqueada" data-id="hidro" data-prereq="geo_fisica">
+Hidroclimatología
+</div>
+
+<div class="materia aprobable">Historia de las Ideas Geográficas</div>
+<div class="materia aprobable" data-id="geologia">Geología</div>
+<div class="materia aprobable" data-id="economia">Fundamentos de Economía</div>
+
+<div class="materia bloqueada" data-id="estadistica1" data-prereq="mate_basica">
+Estadística I
+</div>
+</div>
+
+<!-- ===== SEGUNDO AÑO ===== -->
+
+<div class="semestre">
+<h2>Semestre III</h2>
+
+<div class="materia bloqueada" data-prereq="economia">
+Geografía Económica
+</div>
+
+<div class="materia aprobable">Geografía Urbana</div>
+
+<div class="materia bloqueada" data-id="geomorfologia" data-prereq="geologia">
+Geomorfología
+</div>
+
+<div class="materia aprobable">Tendencias Geográficas Contemporáneas</div>
+
+<div class="materia bloqueada" data-id="sensores" data-prereq="cartografia">
+Interpretación de Imágenes de Sensores Remotos
+</div>
+
+<div class="materia bloqueada" data-id="estadistica2" data-prereq="estadistica1">
+Estadística II
+</div>
+</div>
+
+<div class="semestre">
+<h2>Semestre IV</h2>
+
+<div class="materia bloqueada" data-id="suelos" data-prereq="geomorfologia">
+Geografía de Suelos
+</div>
+
+<div class="materia aprobable" data-id="metodologia">
+Metodología de la Investigación Geográfica
+</div>
+
+<div class="materia aprobable">Geografía Rural</div>
+
+<div class="materia bloqueada" data-id="sig1" data-prereq="sensores">
+Sistemas de Información Geográfica I
+</div>
+</div>
+
+<!-- ===== TERCER AÑO ===== -->
+
+<div class="semestre">
+<h2>Semestre V</h2>
+
+<div class="materia bloqueada" data-prereq="metodologia">
+Análisis Territorial
+</div>
+
+<div class="materia bloqueada" data-prereq="suelos">
+Ambientes Marinos y Costeros
+</div>
+
+<div class="materia aprobable">Geografía Política</div>
+
+<div class="materia bloqueada" data-id="sig2" data-prereq="sig1">
+Sistemas de Información Geográfica II
+</div>
+</div>
+
+<div class="semestre">
+<h2>Semestre VI</h2>
+
+<div class="materia aprobable">Inglés IV</div>
+
+<div class="materia bloqueada"
+     data-id="textos_disciplinas"
+     data-prereq="textos_generales">
+Comprensión y Producción de Textos Académicos de las Disciplinas
+</div>
+
+<div class="materia aprobable">Geografía de Colombia</div>
+
+<div class="materia bloqueada" data-prereq="hidro">
+Biogeografía
+</div>
+
+<div class="materia bloqueada" data-prereq="metodologia">
+Planificación Territorial
+</div>
+
+<div class="materia aprobable">Educación Geográfica</div>
+</div>
+
+<!-- ===== CUARTO AÑO ===== -->
+
+<div class="semestre">
+<h2>Semestre VII</h2>
+
+<div class="materia aprobable">Taller de Geografía I</div>
+<div class="materia aprobable">Seminario de Conflictos Territoriales</div>
+
+<div class="materia bloqueada" data-prereq="geomorfologia">
+Seminario de Geografía de los Riesgos
+</div>
+</div>
+
+<div class="semestre">
+<h2>Semestre VIII</h2>
+
+<div class="materia bloqueada" data-prereq="metodologia">
+Seminario de Trabajo de Grado
+</div>
+
+<div class="materia bloqueada" data-prereq="metodologia">
+Ordenamiento Territorial
+</div>
+
+<div class="materia aprobable">Taller de Geografía II</div>
+</div>
+
+<!-- ===== QUINTO AÑO ===== -->
+
+<div class="semestre">
+<h2>Semestre IX</h2>
+
+<div class="materia bloqueada" data-id="grado1" data-prereq="metodologia">
+Trabajo de Grado I
+</div>
+</div>
+
+<div class="semestre">
+<h2>Semestre X</h2>
+
+<div class="materia bloqueada" data-prereq="grado1">
+Trabajo de Grado II
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
